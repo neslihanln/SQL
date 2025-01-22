@@ -1,0 +1,10 @@
+select AVG (UnitsInStock) from Products;
+
+select count (ProductName) from Products
+where ProductName LIKE 'C%';
+
+select max (UnitsInStock) from Products
+where CategoryID= 3 ;
+
+select  count ( DISTINCT(QuantityPerUnit)) from Products
+where ReorderLevel>10;
