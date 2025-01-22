@@ -1,0 +1,13 @@
+select CategoryID ,ProductName from Products
+GROUP BY CategoryID, ProductName ;
+
+select SupplierID, ProductName ,UnitsInStock from Products
+where UnitsInStock>50 
+group by SupplierID, ProductName, UnitsInStock;
+
+select count (SupplierID) SupplierID, ProductName ,UnitsInStock   from Products
+group by SupplierID, ProductName, UnitsInStock
+having UnitsInStock>50 ;
+
+select * from Customers
+where ;
