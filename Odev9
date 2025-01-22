@@ -1,0 +1,9 @@
+
+SELECT * from Categories
+JOIN Products ON Categories.CategoryID = Products .CategoryID;
+
+SELECT CompanyName, ContactName FROM Products
+join Suppliers ON Products.SupplierID = Suppliers.SupplierID;
+
+SELECT CategoryName  FROM Products
+JOIN Categories ON Products.CategoryID= Categories.CategoryID;
