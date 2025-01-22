@@ -1,0 +1,15 @@
+select DISTINCT QuantityPerUnit from Products;
+
+select count (DISTINCT QuantityPerUnit)  from Products;
+
+select COUNT(ProductName)  from Products
+where ProductName LIKE  'C%' and SupplierID=1;
+
+select COUNT(*) from Customers
+where Country LIKE '_____';
+
+select COUNT(*) from Customers
+where City LIKE '%R' or City LIKE '%r';
+
+select City from  Customers
+where City LIKE '%R' or City LIKE '%r'; 
