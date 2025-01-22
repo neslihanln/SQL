@@ -1,0 +1,11 @@
+select top 5 UnitPrice , ProductName from Products
+where ProductName LIKE '%n'
+order by UnitPrice desc;
+
+select top 10 UnitPrice,ProductName from Products
+where ProductName LIKE '%n'
+order by UnitPrice asc OFFSET 5 ROWS ;
+
+Select top 4 ContactName, CustomerID from Customers
+where CustomerID LIKE 'A%'
+order by ContactName asc;
