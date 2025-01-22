@@ -1,0 +1,22 @@
+CREATE TABLE Employee (
+  id INTEGER PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  birthday DATE ,
+  email VARCHAR(100),
+);
+
+
+UPDATE Employee set last_name = 'Hutable'
+where  last_name = 'Nelsen' ;
+
+UPDATE Employee set First_name = 'Hutable'
+where  first_name = 'Gabi' ;
+
+UPDATE Employee set email= '.... @gmail.com'
+where email = NULL;
+
+DELETE FROM Employee where last_name LIKE 'A%';
+
+DELETE FROM Employee where email LIKE '%edu';
+
+SELECT * FROM Employee;
