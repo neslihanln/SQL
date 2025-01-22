@@ -1,0 +1,8 @@
+SELECT * from Categories
+ LEFT JOIN Products ON Categories.CategoryID = Products .CategoryID;
+
+SELECT * FROM Products
+ RIGHT JOIN Suppliers ON Products.SupplierID = Suppliers.SupplierID;
+
+SELECT  * FROM Products
+FULL JOIN Categories ON Products.CategoryID= Categories.CategoryID;
