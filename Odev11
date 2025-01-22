@@ -1,0 +1,26 @@
+select ProductName from Products
+UNION 
+SELECT CategoryName  FROM Categories;
+
+select ProductName from Products
+UNION ALL
+SELECT CategoryName  FROM Categories;
+
+
+select ProductName from Products
+INTERSECT  
+SELECT CategoryName  FROM Categories;
+
+select ProductName from Products
+INTERSECT --ALL 
+SELECT CategoryName  FROM Categories;
+
+
+
+select ProductName from Products
+EXCEPT  
+SELECT CategoryName  FROM Categories;
+
+select ProductName from Products
+EXCEPT -- ALL
+SELECT CategoryName  FROM Categories;
